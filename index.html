@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Philip LI - Computer Science student portfolio homepage" />
+  <title>Philip LI | Professional Homepage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-bg" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home">Philip LI</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="site-nav" class="site-nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero section reveal">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Computer Science Student</p>
+          <h1>Building practical digital tools for everyday problems.</h1>
+          <p class="lead">
+            I design and develop solutions that are clear, useful, and user-focused.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Get In Touch</a>
+            <a class="btn btn-ghost" href="#projects">View Projects</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img src="me.jpg" alt="Portrait of Philip LI" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section reveal">
+      <div class="container card">
+        <h2>About me</h2>
+        <p>
+          I am a Computer Science student passionate about building digital tools that solve everyday problems.
+          I enjoy turning ideas into practical web and software solutions. My focus is to build products that are
+          simple to use, reliable in performance, and meaningful for real users.
+        </p>
+        <div class="about-grid">
+          <article class="about-item">
+            <h3>What I Care About</h3>
+            <p>
+              I care about writing clean, maintainable code and designing interfaces that help people complete tasks
+              quickly and confidently.
+            </p>
+          </article>
+          <article class="about-item">
+            <h3>Current Learning Goals</h3>
+            <p>
+              I am currently deepening my understanding of web architecture, backend integration, and software testing
+              to deliver more complete end-to-end projects.
+            </p>
+          </article>
+          <article class="about-item">
+            <h3>How I Work</h3>
+            <p>
+              I like to start from user needs, break problems into clear steps, and iterate fast with feedback until
+              the solution feels both useful and polished.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section reveal">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3>Programming</h3>
+            <p>Python, Java</p>
+          </article>
+          <article class="skill-card">
+            <h3>Web</h3>
+            <p>HTML, CSS, JavaScript</p>
+          </article>
+          <article class="skill-card">
+            <h3>Tools</h3>
+            <p>Version Control (Git)</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section reveal">
+      <div class="container card">
+        <h2>Past Projects & Achievements</h2>
+        <p>Here are examples of the kinds of projects and milestones I have been working on.</p>
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3>Campus Task Planner</h3>
+            <p>
+              Built a planner prototype to help students track assignments, reminders, and weekly deadlines in one
+              dashboard.
+            </p>
+            <ul>
+              <li>Tech used: Python, basic web frontend</li>
+              <li>Result: Improved personal task completion consistency</li>
+            </ul>
+          </article>
+          <article class="project-card">
+            <h3>Personal Portfolio Website</h3>
+            <p>
+              Designed and developed a personal website to present my profile, technical skills, and project journey.
+            </p>
+            <ul>
+              <li>Tech used: HTML, CSS, JavaScript</li>
+              <li>Result: Clear online presence for internship applications</li>
+            </ul>
+          </article>
+          <article class="project-card">
+            <h3>Learning Achievement Highlights</h3>
+            <p>
+              Continuously completed coursework and self-learning milestones in programming fundamentals and software
+              development practices.
+        </p>
+            <ul>
+              <li>Focus: Problem solving, version control, coding standards</li>
+              <li>Growth: Stronger confidence in building complete projects</li>
+            </ul>
+          </article>
+        </div>
+        <a class="text-link" href="https://your-links" target="_blank" rel="noopener noreferrer">
+          Link to past projects and achievements
+        </a>
+      </div>
+    </section>
+
+    <section id="contact" class="section reveal">
+      <div class="container contact-box">
+        <h2>Contact</h2>
+        <p>If you would like to collaborate, feel free to reach out.</p>
+        <a class="email-link" href="mailto:alex@example.com">alex@example.com</a>
+        <button id="copy-email" class="btn btn-secondary" type="button">Copy Email</button>
+        <p id="copy-status" class="copy-status" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© <span id="year"></span> Philip LI</p>
+      <a href="#home">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
